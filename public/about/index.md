@@ -1,6 +1,7 @@
 ---
 title: About Me
 description: Hey, I'm Oliver F. Anderson! A data scientist and health nut.
+draft: false
 ---
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
