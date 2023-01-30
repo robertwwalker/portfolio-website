@@ -1,0 +1,17 @@
+{{ partial "header" .}}
+<head>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<br>
+<h1><center>{{ .Site.Params.notFound.h1 }}</center></h1>
+
+<img src="{{ .Site.Params.notFound.gopher }}" alt="404 space" title="404 space" class="404" />
+<div>
+<p> {{ .Params.notFound.citation }}
+<a href="https://www.freepik.com/free-vector/404-error-lost-space-concept-illustration_20602747.htm#query=404&position=4&from_view=keyword" target="_blank" class="small-link">Image by storyset on Freepik</a>
+</p>
+</div>
+
+{{ partial "footer" .}}
+

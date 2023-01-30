@@ -1,0 +1,94 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "Oliver F. Anderson's Data Science Portfolio"
+theme = "hugo-lithium"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+enableEmoji = true
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "Home"
+    title = "Home page"
+    pre = "fa-home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "About"
+    pre = "fa-id-card"
+    url = "/about/"
+    weight = 2
+[[menu.main]]
+    name = "GitHub"
+    pre = "fa-github"
+    url = "https://github.com/oliverfanderson/"
+    weight = 5
+[[menu.main]]
+    name = "LinkedIn"
+    pre = "fa-linkedin"
+    url = "https://linked.com/in/oliver-f-anderson/"
+    weight = 6
+[[menu.main]]
+  identifier = "projects"
+  name = "Projects"
+  pre = "fa-folder"
+  title = "My projects"
+  url = "/projects/"
+  weight = 3
+[[menu.main]]
+  identifier = "contact"
+  name = "Contact"
+  pre = "fa-send"
+  title = "Contact Me"
+  url = "/contact/"
+  weight = 4
+
+[params.main]
+  latestPublishHeader = "My Most Recent Project"
+  
+[params.sections]
+  # Define how your sections will be called
+  # when automatically pulled. For instance in the 404 page
+  projects = "projects"
+  contact = "contact"
+
+[params]
+    description = "Hello there, I'm Oliver."
+    sub = "Data-driven Solutions. Inspired to Optimize Health & Fitness."
+    customCSS = ["/css/styles.css"]
+   
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.12.0"
+    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    MathJaxVersion = "2.7.5"
+
+    # path to the favicon, under "static"
+    favicon = "favicon.ico"
+
+    [params.logo]
+    url = "ofa_logo_zoom.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+
+	[params.notFound]
+  	gopher = "/images/not-found.jpg" # checkout https://gopherize.me/
+ 	h1 = 'Oops! You appear to be lost in space.'
+ 	citation = 'Image by storyset on Freepik'
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark.renderer]
+    unsafe = true  # Enable user to embed HTML snippets in Markdown content.
+    
+[[redirects]]
+    from   = "/**"
+    to     = "/404.html"
+    status = 404

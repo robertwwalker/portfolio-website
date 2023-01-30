@@ -1,0 +1,21 @@
+{{ partial "header" . }}
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+
+<div class="intro">
+<h1>{{ .Site.Params.Chapter }}</h1>
+<h2>{{ markdownify .Site.Params.Description }}</h2>
+<h3>{{ markdownify .Site.Params.Sub }}</h3>
+ <h2>{{ .Site.Params.main.latestPublishHeader | default "My Most Recent Project" }}</h2>
+{{ $pages := where site.RegularPages "Section" "projects" }}
+{{ range first 1 $pages.ByPublishDate.Reverse }}
+  <h3>{{ .Title }}</h3>
+  <p>{{ .Summary }}
+  <a href="{{ .RelPermalink }}">Read more</a>
+{{ end }} 
+</div>
+
+{{ partial "footer" . }}
