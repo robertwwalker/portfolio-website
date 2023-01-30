@@ -2,7 +2,6 @@
 title: Home
 description: 'Data science portfolio - Oliver F. Anderson'
 author: 'Oliver F. Anderson'
-layout: "index"
 ---
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
