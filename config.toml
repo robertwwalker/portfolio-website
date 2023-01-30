@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "oliverfanderson.com/"
 languageCode = "en-us"
 title = "Oliver F. Anderson's Data Science Portfolio"
 theme = "hugo-lithium"
@@ -29,7 +29,7 @@ enableEmoji = true
 [[menu.main]]
     name = "LinkedIn"
     pre = "fa-linkedin"
-    url = "https://linked.com/in/oliver-f-anderson/"
+    url = "https://linkedin.com/in/oliver-f-anderson/"
     weight = 6
 [[menu.main]]
   identifier = "projects"
