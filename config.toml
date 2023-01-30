@@ -1,4 +1,4 @@
-baseurl = "oliverfanderson.com/"
+baseurl = "/"
 languageCode = "en-us"
 title = "Oliver F. Anderson's Data Science Portfolio"
 theme = "hugo-lithium"
